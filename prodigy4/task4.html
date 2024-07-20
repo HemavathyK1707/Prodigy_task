@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+
+        #about {
+            background: linear-gradient(120deg, #1abc9c, #16a085);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s ease-in-out; 
+        }
+        
+
+
+
+
+
+
+        #about img:hover {
+            transform: scale(1.1);
+        }
+
+        #skills {
+            background: linear-gradient(120deg, #e74c3c, #c0392b);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #skills h2 {
+            margin-bottom: 20px;
+        }
+
+        #skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        #projects {
+            padding: 50px 20px;
+            background: linear-gradient(120deg, #f39c12, #d35400);
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .project {
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .project-details {
+            padding: 20px;
+        }
+
+        footer {
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 style="color:#333">Hemavathy K</h1>
+            <p>Fullstack Developer | Designer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="women .jpeg" alt="Your Name">
+            <p>
+                
+                Hello, I'm Hemavathy K, a passionate full-stack developer and designer with a keen interest in crafting innovative digital experiences. Currently, I am pursuing my Bachelor of Engineering in Computer Science at Panimalar Engineering College, Chennai.
+                
+                </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="project.jpeg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>word Counter</h3>
+                        <p>This Word Counter is a Graphical user interface(GUI) system that allows user to easily count the words written in TextArea using button. Users may very quickly count the words using the system simple design. The Word Counter has simple design with button and TextArea. The user can write a text in TextArea click on the button to count the words.</p>
+                    </div>
+                </div>
+                <!-- Add more projects -->
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume <a href="resume.jpeg" target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: hemavathyk1707@gmail.com</p>
+            <p>Phone: +91 8838948106</p>
+            <!-- Add more contact information -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hemavathy. All rights reserved.</p>
+            <!-- Add additional links or information -->
+        </div>
+    </footer>
+</body>
+</html>
+

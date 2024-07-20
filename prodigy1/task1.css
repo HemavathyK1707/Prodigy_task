@@ -1,0 +1,86 @@
+body {
+    background-image: url('2bg.webp') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.stopwatch {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .stopwatch {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+#display {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startStopBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#resetBtn {
+    background-color:crimson;
+    color: white;
+}
+
+#lapBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#darkModeBtn {
+    background-color:black;
+    color: white;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#laps li {
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+body.dark-mode #laps li {
+    background: #333333;
+}
+
+div{
+    background-image: url('2bg.webp') ;
+    background-size:cover ;
+}

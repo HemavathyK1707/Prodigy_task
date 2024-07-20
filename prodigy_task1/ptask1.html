@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CodSoft Company</title>
+    <style>
+        /* Global Styles */
+        body {
+            background:url('bg2.jpeg') no-repeat center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(8);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lightpink;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            font-weight: bold;
+            background-color:black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color:darkblue;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color:darkmagenta;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        h2 {
+            color:deepskyblue;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        p {
+            color:blanchedalmond;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color:darkmagenta;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color:darkmagenta;
+        }
+        .feature {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .feature img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .feature img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            background-color: #705454;
+            color:cornsilk;
+            padding: 50px 0;
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+            color:cornsilk;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact form input[type="submit"] {
+            background-color:darkmagenta;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form input[type="submit"]:hover {
+            background-color:darkmagenta;
+        }
+        .a{
+            color: blueviolet;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+            nav {
+                padding: 5px 0;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            section {
+                padding: 30px 0;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .feature {
+                flex-wrap: wrap;
+            }
+            .feature img {
+                width: 150px;
+                margin-bottom: 20px;
+            }
+            .contact form {
+                max-width: 400px;
+            }
+            .contact form input,
+            .contact form textarea {
+                font-size: 14px;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span class="a">DEGITA software solutions</span> </h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Empowering Your Business with Innovative Software Solutions</h2>
+            <p>Your trusted partner in business growth and innovation. At DEGITA software solutions , we offer comprehensive solutions to elevate your business to new heights.</p>
+            <a href="#about" class="button">Learn More</a>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At DEGITA software solutions, we are dedicated to providing top-notch business solutions that drive growth and innovation. Our mission is to empower businesses by delivering strategic insights and comprehensive services tailored to their unique needs.</p>
+            <p>Our team of experienced developers and designers is dedicated to exceeding your expectations and helping you succeed.</p>
+            <a href="#services" class="button">Our Services</a>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="feature">
+                <img src="service1.jpeg" alt="Service 1">
+                <img src="service2.jpeg" alt="Service 2">
+                <img src="service3.jpeg" alt="Service 3">
+            </div>
+            <p>From custom software development to web design and mobile app development, we offer a wide range of services to help you achieve your goals.</p>
+            <a href="#contact" class="button">Contact Us</a>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 DEGITA software solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
